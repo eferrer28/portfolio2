@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Fixes edges issue  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(00,00,00,0.8);
+}
+
+
+#header a {
+color: white;
+}
+
+
+
+
+
+.spacer {
+  .webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+nav {
+    display:flex;
+    align-items:center;
+}
+
+nav>* {
+    padding-left:30px;
+    padding-right: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(255,255,255,.85);
+    text-transform: uppercase;
+
+}
+
+
+/* INTRO BLOCK SECTION */
+
+#intro-block {
+    margin-top:-50px;
+    padding-top:145px;
+    padding-bottom:50px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:rgba(255,255,255,.95);
+    position:relative;
+    font-size:16px;
+    background-color:rgba(53,63,73,0.7);
+}
+
+#intro-block div {
+    width:700px;
+}
+#intro-block img {
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+
+}
+
+#intro-block h1 {
+    font-size: 80px;
+}
