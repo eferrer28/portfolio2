@@ -31,8 +31,6 @@ color: white;
 
 
 
-
-
 .spacer {
   .webkit-box-flex: 1;
   flex-grow: 1;
@@ -98,20 +96,31 @@ nav>* {
 }
 
 #eRec {
-  background-image: url('/assets/images/recipe.png');
+  background-image: url('/assets/images/emprec.jpg');
 
 }
 
 
 .flexContainer {
   display: flex;
-  height: 200px;
-  padding: 5px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width:1600px;
+  margin: 50px auto 0px;
 
 }
 
 .flexChild {
   padding: 5px;
+  background: white;
+  margin: 16px;
+  text-align: center;
+  height: 300px;
+  width:300px;
+  overflow:hidden;
+  box-shadow: 4px 4px 6px 0px rgba(0,0,0,.2)
+
 }
 
 
@@ -119,8 +128,22 @@ nav>* {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 90%;
+    max-width:1600px;
+    margin: 50px auto 0px;
 }
 
+
+.projectsFlex>div {
+    background: white;
+    margin: 16px;
+    text-align: center;
+    border: 0.25px solid rgba(0,0,0,.2);
+    height: 300px;
+    width:300px;
+    overflow:hidden;
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,.2)
+}
 
 
 .flexImage {
@@ -129,4 +152,15 @@ nav>* {
   background-size:cover;
   background-position: center center;
   border-bottom: solid 0.25px rgba(0,0,0,.2);
+}
+
+.title {
+  margin: 10px 0px;
+   font-size:18px;
+   padding:0 8px
+}
+
+md-card-image {
+  height: 200;
+  width: 200;
 }

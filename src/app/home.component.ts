@@ -31,50 +31,64 @@ import {Component} from "@angular/core";
 <div class="flexContainer">
 
 <md-card class="flexChild">
-<img md-card-lg-image src="/assets/images/recipe.png">
+<img  class="md-card-image" src="/assets/images/recipe.png" height="200" width="200">
+<md-card-content>
+  <p>An Ionic Recipe Application.</p>
+</md-card-content>
+<md-card-actions>
+<a md-button  routerLink=".">Flat button</a>
 
-
-
+<a md-button  href="https://github.com/eferrer28/GroceryApp">Github</a>
+ </md-card-actions>
 </md-card>
 
 <md-card class="flexChild">
-<md-card-header>
-   <div md-card-avatar class="example-header-image"></div>
-   <md-card-title>Shiba Inu</md-card-title>
-   <md-card-subtitle>Dog Breed</md-card-subtitle>
- </md-card-header>
-<img md-card-lg-image src="/assets/images/numbers.png">
+<img  class="md-card-image" src="/assets/images/numbers.png" height="200" width="200">
+<md-card-content>
+  <p> python twitter bot.</p>
+</md-card-content>
+<md-card-actions>
 
-  <md-card-content>
-    <p>This is supporting text.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </md-card-content>
+<a md-button href="https://twitter.com/EricsNumberBot">Project</a>
 
+<a md-button href="https://github.com/eferrer28/TwitterBot">Github</a>
 
+ </md-card-actions>
 </md-card>
+
 
 <md-card class="flexChild">
-<img md-card-lg-image src="/assets/images/numbers.png">
-
-  <md-card-content>
-    <p>This is supporting text.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </md-card-content>
-
-
+<img  class="md-card-image" src="/assets/images/emprec.jpg" height="200" width="200">
+<md-card-content>
+  <p>An Ionic Recipe Application.</p>
+</md-card-content>
+<md-card-actions>
+<a md-button  routerLink=".">Flat button</a>
+<a  md-button href="http://github.com/eferrer28">Github</a>
+ </md-card-actions>
 </md-card>
-
 </div>
 
-<md-grid-list cols="2" rowHeight="2:1">
-  <md-grid-tile>1</md-grid-tile>
-  <md-grid-tile>2</md-grid-tile>
-  <md-grid-tile>3</md-grid-tile>
-  <md-grid-tile>4</md-grid-tile>
-</md-grid-list>
+
 
 
 <div class="projectsFlex">
+
+<div class="project">
+<div id="recipes" class="flexImage"></div>
+<div class="title">An Ionic Recipe Application</div>
+</div>
+
+<div class="project">
+<div id="twitterBot" class="flexImage"></div>
+<div class="title">A Python Twitter Bot</div>
+</div>
+
+<div class="project">
+<div id="eRec" class="flexImage"></div>
+<div class="title">Employee Recognition Application: OSU Capstone Project </div>
+</div>
+
 
 <div class="project">
 <div id="recipes" class="flexImage"></div>
@@ -92,11 +106,13 @@ import {Component} from "@angular/core";
 </div>
 
 
-
 </div>
     `
 })
 export class Home {
+
+
+
 
 
 
