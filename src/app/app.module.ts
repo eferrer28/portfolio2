@@ -9,12 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 import {Home} from "./home.component";
 import { PageNotFound} from "./page-not-found-component";
 import { Projects} from "./projects.component";
+import { Blog } from "./blog.component";
+import { Bio } from "./bio.component";
 
 
 const appRoutes: Routes = [
   { path: 'home', component: Home },
   { path: '', component: Home},
   { path: 'projects', component: Projects },
+  { path: 'blog', component: Blog },
+  { path: 'bio', component: Projects },
 
     { path: '**', component: PageNotFound }
 
@@ -25,7 +29,9 @@ const appRoutes: Routes = [
     AppComponent,
     Home,
     PageNotFound,
-    Projects
+    Projects,
+    Blog,
+    Bio
   ],
   imports: [
     BrowserModule,
