@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   { path: '', component: Home},
   { path: 'projects', component: Projects },
   { path: 'blog', component: Blog },
-  { path: 'bio', component: Projects },
+  { path: 'bio', component: Bio },
 
     { path: '**', component: PageNotFound }
 

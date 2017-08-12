@@ -164,3 +164,21 @@ md-card-image {
   height: 200;
   width: 200;
 }
+
+.headers {
+  text-align: center;
+
+
+}
+
+.bioContainer {
+
+  margin: 100px auto 0px;
+  width: 75%;
+
+}
+
+ul {
+  margin:0;
+  padding:5px 0 15px 35px;
+}
