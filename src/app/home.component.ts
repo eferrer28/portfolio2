@@ -50,7 +50,6 @@ import {Component} from "@angular/core";
 <md-card-actions>
 
 <a md-button href="https://twitter.com/EricsNumberBot">Project</a>
-
 <a md-button href="https://github.com/eferrer28/TwitterBot">Github</a>
 
  </md-card-actions>
@@ -61,6 +60,27 @@ import {Component} from "@angular/core";
 <img  class="md-card-image" src="/assets/images/emprec.jpg" height="200" width="200">
 <md-card-content>
   <p>An Ionic Recipe Application.</p>
+</md-card-content>
+<md-card-actions>
+<a  md-button href="http://rocky-ridge-55037.herokuapp.com/">Project</a>
+<a  md-button href="https://github.com/StabbyMcDuck/employee_recognition">Github</a>
+ </md-card-actions>
+</md-card>
+
+<md-card class="flexChild">
+<img  class="md-card-image" src="/assets/images/lakeview.jpg" height="200" width="200">
+<md-card-content>
+  <p>Wordpress Vacation Rental Site</p>
+</md-card-content>
+<md-card-actions>
+<a  md-button href="http://ajijicyellimon.com">Project</a>
+ </md-card-actions>
+</md-card>
+
+<md-card class="flexChild">
+<img  class="md-card-image" src="/assets/images/construction.png" height="200" width="200">
+<md-card-content>
+  <p>A Job Hunt Application.</p>
 </md-card-content>
 <md-card-actions>
 <a md-button  routerLink=".">Flat button</a>
