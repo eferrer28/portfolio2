@@ -30,7 +30,7 @@ import {Component} from "@angular/core";
         Frameworks:
         <ul>
         <li>Front-End: Angular 2/4, Bootstrap</li>
-        <li>Back-End: Node.js Ruby on Rails, Django </li>
+        <li>Back-End: Node.js, Ruby on Rails, Django </li>
         <li>Mobile: Ionic 2
         </ul>
 

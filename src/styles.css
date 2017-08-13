@@ -182,3 +182,18 @@ ul {
   margin:0;
   padding:5px 0 15px 35px;
 }
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        padding:100px 16px 16px 16px;
+    }
+    .flexContainer img {
+        width:100%;
+        height:calc( ( 100vw - 16px ) );
+        padding: 0;
+    }
+
+}
