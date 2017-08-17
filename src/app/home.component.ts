@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
-
+import {MdDialog} from '@angular/material';
+import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
 
 
 @Component({
@@ -73,6 +74,8 @@ import {Component} from "@angular/core";
   <p>Wordpress Vacation Rental Site</p>
 </md-card-content>
 <md-card-actions>
+<button md-button (click)="openDialog()">Open dialog</button>
+
 <a  md-button href="http://ajijicyellimon.com">Project</a>
  </md-card-actions>
 </md-card>
@@ -132,7 +135,12 @@ import {Component} from "@angular/core";
 export class Home {
 
 
+constructor(public dialog: MdDialog){
 
+}
+  openDialog(){
+    this.dialog.open(WpDialogComponent)
+  }
 
 
 

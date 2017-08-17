@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdGridListModule, MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { MdDialogModule, MdGridListModule, MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +11,7 @@ import { PageNotFound} from "./page-not-found-component";
 import { Projects} from "./projects.component";
 import { Blog } from "./blog.component";
 import { Bio } from "./bio.component";
+import { WpDialogComponent } from './wp-dialog/wp-dialog.component';
 
 
 const appRoutes: Routes = [
@@ -31,7 +32,12 @@ const appRoutes: Routes = [
     PageNotFound,
     Projects,
     Blog,
-    Bio
+    Bio,
+    WpDialogComponent,
+    //MdDialog
+  ],
+  entryComponents: [
+    WpDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,8 @@ const appRoutes: Routes = [
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
-    MdGridListModule
+    MdGridListModule,
+    MdDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
