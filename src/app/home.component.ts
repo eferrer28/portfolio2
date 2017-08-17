@@ -100,41 +100,7 @@ import { RecognitionDialogComponent } from './recognition-dialog/recognition-dia
 
 
 
-<div class="projectsFlex">
 
-<div class="project">
-<div id="recipes" class="flexImage"></div>
-<div class="title">An Ionic Recipe Application</div>
-</div>
-
-<div class="project">
-<div id="twitterBot" class="flexImage"></div>
-<div class="title">A Python Twitter Bot</div>
-</div>
-
-<div class="project">
-<div id="eRec" class="flexImage"></div>
-<div class="title">Employee Recognition Application: OSU Capstone Project </div>
-</div>
-
-
-<div class="project">
-<div id="recipes" class="flexImage"></div>
-<div class="title">ne</div>
-</div>
-
-<div class="project">
-<div id="twitterBot" class="flexImage"></div>
-<div class="title">heh heh heh</div>
-</div>
-
-<div class="project">
-<div id="eRec" class="flexImage"></div>
-<div class="title">Heh heh heh </div>
-</div>
-
-
-</div>
     `
 })
 export class Home {
