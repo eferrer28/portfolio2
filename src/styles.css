@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 #header {
@@ -184,6 +185,41 @@ ul {
   padding:5px 0 15px 35px;
 }
 
+/* Blog CSS*/
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding-top: 75px;
+}
+
+.sidebar {
+  background-color: grey;
+  width: 15%
+}
+
+.content {
+  background-color: lightgrey;
+  width: 85%;
+}
+
+#content-container {
+  flex-direction: column;
+  dispaly: flex;
+  min-height: 100%;
+  justify-content: space-around;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+
+
+
+}
+
+#content-container p {
+
+}
 
 /* Mobile */
 @media (max-width: 600px) {
