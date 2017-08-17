@@ -1,7 +1,9 @@
 import {Component} from "@angular/core";
 import {MdDialog} from '@angular/material';
 import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
-
+import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
+import { BotDialogComponent } from './bot-dialog/bot-dialog.component';
+import { RecognitionDialogComponent } from './recognition-dialog/recognition-dialog.component';
 
 @Component({
     selector: 'home',
@@ -37,7 +39,7 @@ import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
   <p>An Ionic Recipe Application.</p>
 </md-card-content>
 <md-card-actions>
-<a md-button  routerLink=".">Flat button</a>
+<button md-button (click)="openRecognition()">Details</button>
 
 <a md-button  href="https://github.com/eferrer28/GroceryApp">Github</a>
  </md-card-actions>
@@ -49,6 +51,7 @@ import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
   <p> python twitter bot.</p>
 </md-card-content>
 <md-card-actions>
+<button md-button (click)="openBot()">Details</button>
 
 <a md-button href="https://twitter.com/EricsNumberBot">Project</a>
 <a md-button href="https://github.com/eferrer28/TwitterBot">Github</a>
@@ -64,6 +67,8 @@ import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
 </md-card-content>
 <md-card-actions>
 <a  md-button href="http://rocky-ridge-55037.herokuapp.com/">Project</a>
+<button md-button (click)="openRecognition()">Details</button>
+
 <a  md-button href="https://github.com/StabbyMcDuck/employee_recognition">Github</a>
  </md-card-actions>
 </md-card>
@@ -74,7 +79,7 @@ import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
   <p>Wordpress Vacation Rental Site</p>
 </md-card-content>
 <md-card-actions>
-<button md-button (click)="openDialog()">Open dialog</button>
+<button md-button (click)="openDialog()">Details</button>
 
 <a  md-button href="http://ajijicyellimon.com">Project</a>
  </md-card-actions>
@@ -142,6 +147,18 @@ constructor(public dialog: MdDialog){
     this.dialog.open(WpDialogComponent)
   }
 
+  openRecipe(){
+    this.dialog.open(RecipeDialogComponent)
+  }
+
+  openBot(){
+    this.dialog.open(BotDialogComponent)
+  }
+
+  openRecognition(){
+    this.dialog.open(RecognitionDialogComponent)
+
+  }
 
 
 

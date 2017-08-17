@@ -12,6 +12,9 @@ import { Projects} from "./projects.component";
 import { Blog } from "./blog.component";
 import { Bio } from "./bio.component";
 import { WpDialogComponent } from './wp-dialog/wp-dialog.component';
+import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
+import { BotDialogComponent } from './bot-dialog/bot-dialog.component';
+import { RecognitionDialogComponent } from './recognition-dialog/recognition-dialog.component';
 
 
 const appRoutes: Routes = [
@@ -34,10 +37,17 @@ const appRoutes: Routes = [
     Blog,
     Bio,
     WpDialogComponent,
+    RecipeDialogComponent,
+    BotDialogComponent,
+    RecognitionDialogComponent,
     //MdDialog
   ],
   entryComponents: [
-    WpDialogComponent
+    WpDialogComponent,
+    BotDialogComponent,
+    RecipeDialogComponent,
+    RecognitionDialogComponent,
+
   ],
   imports: [
     BrowserModule,
