@@ -190,7 +190,7 @@ ul {
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 160vh;
   padding-top: 75px;
 }
 
@@ -219,6 +219,14 @@ ul {
 
 #content-container p {
 
+}
+
+h3 {
+  padding-bottom: 50px;
+}
+
+.blogspace {
+  padding-bottom: 50px;
 }
 
 /* Mobile */
