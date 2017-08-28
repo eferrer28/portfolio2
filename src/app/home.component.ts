@@ -53,8 +53,6 @@ import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 </md-card-content>
 <md-card-actions>
 <button md-button (click)="openBot()">Details</button>
-
-<a md-button href="https://twitter.com/EricsNumberBot">Project</a>
 <a md-button href="https://github.com/eferrer28/TwitterBot">Github</a>
 
  </md-card-actions>
@@ -62,14 +60,12 @@ import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 
 
 <md-card class="flexChild">
-<img  class="md-card-image" src="/assets/images/emprec.jpg" height="200" width="200">
+<img (click)="employeeRec()" class="md-card-image" src="/assets/images/emprec.jpg" height="200" width="200">
 <md-card-content>
   <p>An Ionic Recipe Application.</p>
 </md-card-content>
 <md-card-actions>
-<a  md-button href="http://rocky-ridge-55037.herokuapp.com/">Project</a>
 <button md-button (click)="openRecognition()">Details</button>
-
 <a  md-button href="https://github.com/StabbyMcDuck/employee_recognition">Github</a>
  </md-card-actions>
 </md-card>
@@ -93,11 +89,10 @@ import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 </md-card-content>
 <md-card-actions>
 <a md-button  routerLink=".">Flat button</a>
-<a  md-button href="http://github.com/eferrer28">Github</a>
+<a  md-button href="https://github.com/eferrer28/JobHunt">Github</a>
  </md-card-actions>
 </md-card>
 
-<video width="320" height="240" controls>
  <source src="/assets/videos/groceryApp.mp4" type="video/mp4">
 
 </video>
@@ -141,6 +136,11 @@ constructor(public dialog: MdDialog){
 
   twitterbot(){
     window.location.href = 'https://twitter.com/EricsNumberBot'
+
+  }
+
+  employeeRec(){
+    window.location.href = 'http://rocky-ridge-55037.herokuapp.com/'
 
   }
 
