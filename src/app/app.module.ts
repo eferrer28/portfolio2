@@ -15,6 +15,8 @@ import { WpDialogComponent } from './wp-dialog/wp-dialog.component';
 import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
 import { BotDialogComponent } from './bot-dialog/bot-dialog.component';
 import { RecognitionDialogComponent } from './recognition-dialog/recognition-dialog.component';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
+import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 
 
 const appRoutes: Routes = [
@@ -40,6 +42,8 @@ const appRoutes: Routes = [
     RecipeDialogComponent,
     BotDialogComponent,
     RecognitionDialogComponent,
+    RecipeVidComponent,
+
     //MdDialog
   ],
   entryComponents: [
@@ -47,6 +51,7 @@ const appRoutes: Routes = [
     BotDialogComponent,
     RecipeDialogComponent,
     RecognitionDialogComponent,
+    RecipeVidComponent
 
   ],
   imports: [
@@ -60,9 +65,11 @@ const appRoutes: Routes = [
     MdToolbarModule,
     MdIconModule,
     MdGridListModule,
-    MdDialogModule
+    MdDialogModule,
+    NgxGistModule
   ],
-  providers: [],
+  providers: [
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -190,7 +190,7 @@ ul {
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 160vh;
+  height: 260vh;
   padding-top: 75px;
 }
 
@@ -226,6 +226,10 @@ h3 {
 }
 
 .blogspace {
+  padding-bottom: 50px;
+}
+
+.blogpspacer {
   padding-bottom: 50px;
 }
 

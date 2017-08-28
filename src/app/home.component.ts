@@ -4,6 +4,7 @@ import {WpDialogComponent} from './wp-dialog/wp-dialog.component'
 import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
 import { BotDialogComponent } from './bot-dialog/bot-dialog.component';
 import { RecognitionDialogComponent } from './recognition-dialog/recognition-dialog.component';
+import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 
 @Component({
     selector: 'home',
@@ -34,19 +35,19 @@ import { RecognitionDialogComponent } from './recognition-dialog/recognition-dia
 <div class="flexContainer">
 
 <md-card class="flexChild">
-<img  class="md-card-image" src="/assets/images/recipe.png" height="200" width="200">
+<img  (click)="openRecipeVid()" class="md-card-image" src="/assets/images/recipe.png" height="200" width="200">
 <md-card-content>
   <p>An Ionic Recipe Application.</p>
 </md-card-content>
 <md-card-actions>
-<button md-button (click)="openRecognition()">Details</button>
+<button md-button (click)="openRecipe()">Details</button>
 
 <a md-button  href="https://github.com/eferrer28/GroceryApp">Github</a>
  </md-card-actions>
 </md-card>
 
 <md-card class="flexChild">
-<img  class="md-card-image" src="/assets/images/numbers.png" height="200" width="200">
+<img (click)="twitterbot()" class="md-card-image" src="/assets/images/numbers.png" height="200" width="200">
 <md-card-content>
   <p> python twitter bot.</p>
 </md-card-content>
@@ -95,6 +96,13 @@ import { RecognitionDialogComponent } from './recognition-dialog/recognition-dia
 <a  md-button href="http://github.com/eferrer28">Github</a>
  </md-card-actions>
 </md-card>
+
+<video width="320" height="240" controls>
+ <source src="/assets/videos/groceryApp.mp4" type="video/mp4">
+
+</video>
+
+
 </div>
 
 
@@ -117,12 +125,22 @@ constructor(public dialog: MdDialog){
     this.dialog.open(RecipeDialogComponent)
   }
 
+  openRecipeVid(){
+    this.dialog.open(RecipeVidComponent)
+  }
+
+
   openBot(){
     this.dialog.open(BotDialogComponent)
   }
 
   openRecognition(){
     this.dialog.open(RecognitionDialogComponent)
+
+  }
+
+  twitterbot(){
+    window.location.href = 'https://twitter.com/EricsNumberBot'
 
   }
 
