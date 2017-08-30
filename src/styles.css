@@ -195,12 +195,12 @@ ul {
 }
 
 .sidebar {
-  background-color: grey;
+ /* background-color: grey;*/
   width: 15%
 }
 
 .content {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   width: 85%;
 }
 
@@ -230,7 +230,32 @@ h3 {
 }
 
 .blogpspacer {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+
+/*sidebar blog */
+
+.sidebar .flexChild {
+
+  padding: 5px;
+  background: white;
+  margin: 16px;
+  text-align: center;
+  height: 140px;
+  width: 150px;
+  overflow:hidden;
+  box-shadow: 4px 4px 6px 0px rgba(0,0,0,.2);
+  border-bottom: None;
+  
+
+}
+
+.blogFont {
+
+    color: #0083c5;
+    font-weight: 700;
+
 }
 
 /* Mobile */

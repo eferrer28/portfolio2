@@ -93,9 +93,7 @@ import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
  </md-card-actions>
 </md-card>
 
- <source src="/assets/videos/groceryApp.mp4" type="video/mp4">
 
-</video>
 
 
 </div>

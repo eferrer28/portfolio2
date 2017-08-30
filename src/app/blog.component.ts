@@ -41,10 +41,12 @@ import {Component} from "@angular/core";
         optimized for visual comprehension and differentiating between similar data types.
         </p>
 
-
-        <p class="blogpspacer">
+        <p class="blogpspacer"> With the following code you can get a gridlist of images like down below. </p>
         
-        </p>
+        
+                <ngx-gist [gistId]="'eferrer28/cbe9611a41feba56d7eeeb20de8d6796'"></ngx-gist>
+
+
 
         <md-grid-list cols="3" rowHeight="2:1">
           <md-grid-tile>
@@ -68,10 +70,7 @@ import {Component} from "@angular/core";
         </md-grid-list>
 
 
-        <p> As you can see blash blah blah </p>
-
-
-        <ngx-gist [gistId]="'eferrer28/cbe9611a41feba56d7eeeb20de8d6796'"></ngx-gist>
+ 
         
 
       </div>
@@ -81,32 +80,24 @@ import {Component} from "@angular/core";
       </div>
 
       <div class="sidebar">
-      </div>
+
+      <md-card class="flexChild">
+      <img   class="md-card-image" src="/assets/images/recipe.png" height="50" width="50">
+      <md-card-content>
+        <p class="blogFont">Making Image Grids</p>
+      </md-card-content>
+
+      </md-card>
 
       </div>
 
+      </div>
 
-
-        <!--
-        <md-grid-list cols="4" rowHeight="100px">
-          <md-grid-tile
-              *ngFor="let tile of tiles"
-              [colspan]="tile.cols"
-              [rowspan]="tile.rows"
-              [style.background]="tile.color">
-            {{tile.text}}
-          </md-grid-tile>
-        </md-grid-list>
-          -->
     `
 })
 export class Blog {
 
-  tiles = [
-    {text: 'One', cols: 3,rows: 5, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 6, color: 'lightgreen'},
 
-  ];
 
 
 }
