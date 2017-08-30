@@ -15,7 +15,7 @@ import { RecipeVidComponent } from './recipe-vid/recipe-vid.component';
 
     <!-- intro-block-->
     <div id="intro-block">
-        <img src="" alt="" class="padded">
+        <img src="/assets/images/headshot.jpg" alt="Eric" class="padded">
         <div>
             <div>
                 <h1>Eric Ferrer</h1>

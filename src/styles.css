@@ -222,11 +222,12 @@ ul {
 }
 
 h3 {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .blogspace {
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .blogpspacer {
@@ -246,7 +247,7 @@ h3 {
   width: 150px;
   overflow:hidden;
   box-shadow: 4px 4px 6px 0px rgba(0,0,0,.2);
-  border-bottom: None;
+  border-bottom: red;
   
 
 }

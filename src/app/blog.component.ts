@@ -21,12 +21,11 @@ import {Component} from "@angular/core";
       as any as I have the extra time. I also really wanted to practice my technical
       writing skills for any future jobs that I may come across. You never know
       when that might come in handy. For the most part these posts are going to be
-      for my own benefit and they are contain snippets for things that I need
-      that I tend to forget for whatever reason.</p>
+      for my own benefit and they are going to contain snippets for things that I need
+      for whatever reason.</p>
    
 
 
-        <p>meow mew ow</p>
 
 
         <h1 class="blogspace">Making Image Grids</h1>
@@ -82,7 +81,7 @@ import {Component} from "@angular/core";
       <div class="sidebar">
 
       <md-card class="flexChild">
-      <img   class="md-card-image" src="/assets/images/recipe.png" height="50" width="50">
+      <img   class="md-card-image" src="/assets/images/imagegrid.png" height="100" width="100">
       <md-card-content>
         <p class="blogFont">Making Image Grids</p>
       </md-card-content>
